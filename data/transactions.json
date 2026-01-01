@@ -1,0 +1,202 @@
+[
+  {
+    "TransactionAmount": 55000,
+    "Timestamp": "2025-01-01 12:00:00",
+    "LastLogin": "2024-12-20 10:00:00",
+    "Category": "Travel",
+    "AnomalyScore": 0.9,
+    "Transaction_Frequency": 2,
+    "Total_Linked_Value": 120000,
+    "SuspiciousFlag": 1
+  },
+  {
+    "TransactionAmount": 12000,
+    "Timestamp": "2025-01-03 09:15:00",
+    "LastLogin": "2025-01-02 18:30:00",
+    "Category": "Food",
+    "AnomalyScore": 0.15,
+    "Transaction_Frequency": 5,
+    "Total_Linked_Value": 45000,
+    "SuspiciousFlag": 0
+  },
+  {
+    "TransactionAmount": 250000,
+    "Timestamp": "2025-01-05 14:40:00",
+    "LastLogin": "2024-10-01 08:20:00",
+    "Category": "Procurement",
+    "AnomalyScore": 0.95,
+    "Transaction_Frequency": 1,
+    "Total_Linked_Value": 250000,
+    "SuspiciousFlag": 1
+  },
+  {
+    "TransactionAmount": 8000,
+    "Timestamp": "2025-01-06 11:10:00",
+    "LastLogin": "2025-01-06 10:50:00",
+    "Category": "Retail",
+    "AnomalyScore": 0.1,
+    "Transaction_Frequency": 10,
+    "Total_Linked_Value": 90000,
+    "SuspiciousFlag": 0
+  },
+  {
+    "TransactionAmount": 98000,
+    "Timestamp": "2025-01-08 16:00:00",
+    "LastLogin": "2024-12-01 09:00:00",
+    "Category": "Contract",
+    "AnomalyScore": 0.88,
+    "Transaction_Frequency": 1,
+    "Total_Linked_Value": 98000,
+    "SuspiciousFlag": 1
+  },
+  {
+    "TransactionAmount": 1500,
+    "Timestamp": "2025-01-09 08:45:00",
+    "LastLogin": "2025-01-09 08:30:00",
+    "Category": "Welfare",
+    "AnomalyScore": 0.05,
+    "Transaction_Frequency": 12,
+    "Total_Linked_Value": 18000,
+    "SuspiciousFlag": 0
+  },
+  {
+    "TransactionAmount": 42000,
+    "Timestamp": "2025-01-10 13:20:00",
+    "LastLogin": "2024-11-15 17:00:00",
+    "Category": "Online",
+    "AnomalyScore": 0.72,
+    "Transaction_Frequency": 3,
+    "Total_Linked_Value": 90000,
+    "SuspiciousFlag": 1
+  },
+  {
+    "TransactionAmount": 6700,
+    "Timestamp": "2025-01-11 10:10:00",
+    "LastLogin": "2025-01-11 09:55:00",
+    "Category": "Food",
+    "AnomalyScore": 0.08,
+    "Transaction_Frequency": 7,
+    "Total_Linked_Value": 32000,
+    "SuspiciousFlag": 0
+  },
+  {
+    "TransactionAmount": 310000,
+    "Timestamp": "2025-01-12 15:45:00",
+    "LastLogin": "2024-07-10 10:00:00",
+    "Category": "Procurement",
+    "AnomalyScore": 0.97,
+    "Transaction_Frequency": 1,
+    "Total_Linked_Value": 310000,
+    "SuspiciousFlag": 1
+  },
+  {
+    "TransactionAmount": 22000,
+    "Timestamp": "2025-01-13 12:00:00",
+    "LastLogin": "2025-01-13 11:30:00",
+    "Category": "Retail",
+    "AnomalyScore": 0.2,
+    "Transaction_Frequency": 4,
+    "Total_Linked_Value": 65000,
+    "SuspiciousFlag": 0
+  },
+  {
+    "TransactionAmount": 175000,
+    "Timestamp": "2025-01-14 14:30:00",
+    "LastLogin": "2024-09-01 09:00:00",
+    "Category": "Contract",
+    "AnomalyScore": 0.91,
+    "Transaction_Frequency": 2,
+    "Total_Linked_Value": 300000,
+    "SuspiciousFlag": 1
+  },
+  {
+    "TransactionAmount": 900,
+    "Timestamp": "2025-01-15 09:05:00",
+    "LastLogin": "2025-01-15 09:00:00",
+    "Category": "Welfare",
+    "AnomalyScore": 0.03,
+    "Transaction_Frequency": 15,
+    "Total_Linked_Value": 13500,
+    "SuspiciousFlag": 0
+  },
+  {
+    "TransactionAmount": 56000,
+    "Timestamp": "2025-01-16 11:50:00",
+    "LastLogin": "2024-12-05 16:00:00",
+    "Category": "Travel",
+    "AnomalyScore": 0.7,
+    "Transaction_Frequency": 3,
+    "Total_Linked_Value": 160000,
+    "SuspiciousFlag": 1
+  },
+  {
+    "TransactionAmount": 34000,
+    "Timestamp": "2025-01-17 10:30:00",
+    "LastLogin": "2025-01-16 18:00:00",
+    "Category": "Online",
+    "AnomalyScore": 0.4,
+    "Transaction_Frequency": 6,
+    "Total_Linked_Value": 98000,
+    "SuspiciousFlag": 0
+  },
+  {
+    "TransactionAmount": 7800,
+    "Timestamp": "2025-01-18 08:20:00",
+    "LastLogin": "2025-01-18 08:00:00",
+    "Category": "Food",
+    "AnomalyScore": 0.12,
+    "Transaction_Frequency": 8,
+    "Total_Linked_Value": 41000,
+    "SuspiciousFlag": 0
+  },
+  {
+    "TransactionAmount": 260000,
+    "Timestamp": "2025-01-19 15:10:00",
+    "LastLogin": "2024-06-01 09:30:00",
+    "Category": "Procurement",
+    "AnomalyScore": 0.93,
+    "Transaction_Frequency": 1,
+    "Total_Linked_Value": 260000,
+    "SuspiciousFlag": 1
+  },
+  {
+    "TransactionAmount": 18000,
+    "Timestamp": "2025-01-20 11:00:00",
+    "LastLogin": "2025-01-20 10:45:00",
+    "Category": "Retail",
+    "AnomalyScore": 0.25,
+    "Transaction_Frequency": 5,
+    "Total_Linked_Value": 72000,
+    "SuspiciousFlag": 0
+  },
+  {
+    "TransactionAmount": 95000,
+    "Timestamp": "2025-01-21 14:00:00",
+    "LastLogin": "2024-12-10 09:00:00",
+    "Category": "Contract",
+    "AnomalyScore": 0.85,
+    "Transaction_Frequency": 2,
+    "Total_Linked_Value": 190000,
+    "SuspiciousFlag": 1
+  },
+  {
+    "TransactionAmount": 2100,
+    "Timestamp": "2025-01-22 09:30:00",
+    "LastLogin": "2025-01-22 09:20:00",
+    "Category": "Welfare",
+    "AnomalyScore": 0.06,
+    "Transaction_Frequency": 11,
+    "Total_Linked_Value": 25000,
+    "SuspiciousFlag": 0
+  },
+  {
+    "TransactionAmount": 46000,
+    "Timestamp": "2025-01-23 12:45:00",
+    "LastLogin": "2024-11-25 15:00:00",
+    "Category": "Travel",
+    "AnomalyScore": 0.68,
+    "Transaction_Frequency": 4,
+    "Total_Linked_Value": 140000,
+    "SuspiciousFlag": 1
+  }
+]
