@@ -5,7 +5,7 @@ module.exports = (req, res, next) => {
   // --- PUBLIC ACCESS OVERRIDE ---
   // We automatically inject a dummy User ID and Role so controllers don't crash.
   // This makes every request act as if it's from an authenticated ADMIN.
-  req.userId = "65a1234567890abcdef12345"; // A dummy valid MongoDB ObjectId
+  req.userId = "69562bfd9dcbff8f896abe36"; // A dummy valid MongoDB ObjectId
   req.userRole = "ADMIN";
   return next(); 
   // ------------------------------
