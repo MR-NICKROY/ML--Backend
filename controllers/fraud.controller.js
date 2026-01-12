@@ -4,32 +4,39 @@ const logAudit = require("../utils/auditLogger");
 
 // UPDATED RISK THRESHOLDS
 const classifyRisk = (score) => {
-  if (score <= 0.35) return "LOW";    // Increased from 0.2 to 0.3 to catch your 0.22 scores
-  if (score <= 0.50) return "MEDIUM"; // 0.31 - 0.50
+  if (score <= 0.35) return "LOW";    // 0.00 - 0.35
+  if (score <= 0.50) return "MEDIUM"; // 0.36 - 0.50
   return "HIGH";                      // 0.51 - 1.00
 };
 
 exports.checkFraud = async (req, res) => {
   try {
-    // 1. Call Python ML Service
-    const mlResult = await callMLService(req.body);
+    // 1. Construct Payload Explicitly
+    // We use destructuring to ensure SuspiciousFlag is caught, and default it to 0 if missing.
+    const payload = {
+      ...req.body, // Include all other fields (TransactionAmount, Timestamp, etc.)
+      SuspiciousFlag: req.body.SuspiciousFlag || 0 
+    };
+
+    // 2. Call Python ML Service with the sanitized payload
+    const mlResult = await callMLService(payload);
     
-    // 2. Determine Risk Level based on Score
+    // 3. Determine Risk Level based on Score
     const riskLevel = classifyRisk(mlResult.risk_score);
 
-    // 3. Log the action
+    // 4. Log the action
     await logAudit({
       userId: req.userId,
       role: req.userRole,
       action: "ANALYZE_TRANSACTION"
     });
 
-    // 4. Return Result
+    // 5. Return Result
     res.json({
       decision: mlResult.is_fraud ? "FRAUD" : "CLEAN",
       riskLevel: riskLevel,
       riskScore: mlResult.risk_score,
-      details: mlResult.debug_tags // Shows why (spike, weekend, etc.)
+      details: mlResult.debug_tags // Shows why (spike, weekend, SuspiciousFlag, etc.)
     });
 
   } catch (err) {
