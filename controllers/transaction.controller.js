@@ -4,11 +4,19 @@ const logAudit = require("../utils/auditLogger");
 
 exports.addManualTransaction = async (req, res) => {
   try {
-    const mlData = await callMLService(req.body);
+    // 1. Prepare Payload with Default
+    const payload = {
+      ...req.body,
+      SuspiciousFlag: req.body.SuspiciousFlag || 0 // Default to 0 if missing
+    };
 
+    // 2. Call ML Service
+    const mlData = await callMLService(payload);
+
+    // 3. Save to Database (using payload to ensure 0 is saved)
     const transaction = await Transaction.create({
       userId: req.userId,
-      ...req.body,
+      ...payload, 
       isFraud: mlData.is_fraud,
       riskScore: mlData.risk_score
     });
@@ -47,11 +55,19 @@ exports.adminAddTransaction = async (req, res) => {
   try {
     const { userId, ...txnData } = req.body;
 
-    const mlData = await callMLService(txnData);
+    // 1. Prepare Payload with Default
+    const payload = {
+      ...txnData,
+      SuspiciousFlag: txnData.SuspiciousFlag || 0 // Default to 0
+    };
 
+    // 2. Call ML Service
+    const mlData = await callMLService(payload);
+
+    // 3. Save to DB
     const transaction = await Transaction.create({
       userId,
-      ...txnData,
+      ...payload,
       isFraud: mlData.is_fraud,
       riskScore: mlData.risk_score
     });
